@@ -16,5 +16,13 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
+// users are for testing purposes
 Route.get('users', 'UserController.show')
+
+// projects, automatic resourceful controller
+// TODO: disable Write/Modify for production version
+Route
+  .resource('projects', 'ProjectController')
+  .formats(['json'])
+
 Route.on('/').render('welcome')
