@@ -1,5 +1,7 @@
 'use strict'
 
+const Tag = use ('App/Models/Tag')
+
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
@@ -18,6 +20,8 @@ class TagController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+    // just return a list of everything
+    return await Tag.all()
   }
 
   /**
@@ -30,6 +34,7 @@ class TagController {
    * @param {View} ctx.view
    */
   async create ({ request, response, view }) {
+    response.forbidden('403 forbidden') // error 403
   }
 
   /**
@@ -41,6 +46,7 @@ class TagController {
    * @param {Response} ctx.response
    */
   async store ({ request, response }) {
+    response.forbidden('403 forbidden') // error 403
   }
 
   /**
@@ -53,6 +59,7 @@ class TagController {
    * @param {View} ctx.view
    */
   async show ({ params, request, response, view }) {
+    response.forbidden('403 forbidden') // error 403
   }
 
   /**
@@ -65,6 +72,7 @@ class TagController {
    * @param {View} ctx.view
    */
   async edit ({ params, request, response, view }) {
+    response.forbidden('403 forbidden') // error 403
   }
 
   /**
@@ -76,6 +84,7 @@ class TagController {
    * @param {Response} ctx.response
    */
   async update ({ params, request, response }) {
+    response.forbidden('403 forbidden') // error 403
   }
 
   /**
@@ -87,6 +96,7 @@ class TagController {
    * @param {Response} ctx.response
    */
   async destroy ({ params, request, response }) {
+    response.forbidden('403 forbidden') // error 403
   }
 }
 

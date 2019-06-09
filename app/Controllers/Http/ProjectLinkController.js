@@ -1,3 +1,7 @@
+/*********************************
+This controller currently does nothing, need to implement AUTH
+**********************************/
+
 'use strict'
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */

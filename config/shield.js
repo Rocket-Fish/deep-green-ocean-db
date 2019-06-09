@@ -132,6 +132,7 @@ module.exports = {
   |
   */
   csrf: {
+    // TODO enable for production, disable for dev
     enable: true,
     methods: ['POST', 'PUT', 'DELETE'],
     filterUris: [],
