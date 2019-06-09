@@ -11,7 +11,7 @@ class UserController {
     catch(err) {
         return err
     }
-}
+  }
 }
 
 module.exports = UserController
