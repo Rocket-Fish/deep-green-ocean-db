@@ -19,5 +19,8 @@ database/development.sqlite
 #exe files
 *.exe
 
+#batch files
+*.bat
+
 #yaml
 app.yaml
